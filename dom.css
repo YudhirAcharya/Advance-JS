@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  color: white;
+}
+body {
+  text-align: center;
+  margin-top: 10%;
+  background: linear-gradient(to right, blue, green);
+}
+input {
+  color: black;
+}
+#list {
+  display: flex;
+  justify-content: center;
+  max-width: 100px;
+}
+.cuttingElm {
+  color: rgb(68, 198, 250);
+  text-decoration: line-through;
+}
+button {
+  color: beige;
+  background-color: black;
+}
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.teal {
+  color: teal;
+}
+.steelblue {
+  color: steelblue;
+}
+.orange {
+  color: orange;
+}
+.purple {
+  color: purple;
+}
+
+.emoji {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  filter: grayscale(1);
+  transition-property: transform, filter;
+  transition-duration: 100ms;
+}
+.emoji:hover {
+  transform: scale(1.6);
+  filter: grayscale(0);
+}
