@@ -7,24 +7,59 @@
       content="width=device-width, initial-scale=1.0"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <link href="tailwind.css" rel="stylesheet" />
+    <title>Webpage</title>
   </head>
-  <body>
-    <nav class="py-2 bg-purple-500">
-      <ul class="flex">
-        <li class="mx-2 cursor-pointer">home</li>
-        <li class="mx-2 cursor-pointer">about</li>
-
-        <li class="mx-2 cursor-pointer">contact</li>
-      </ul>
-    </nav>
-    <div class="container">
-      <h1 class="text-blue-900">HI BLUE</h1>
-      <div class="mx-10">
+  <body class="bg-gray-300 font-sans">
+    <div class="container flex mt-32 h-[17rem] mx-auto">
+      <div class="left flex flex-col -my-9">
         <img
-          src="https://avatars.githubusercontent.com/u/67109815?s=280&v=4"
+          class="w-80"
+          src="https://hindubabynames.info/downloads/wp-content/themes/hbn_download/download/social-media/facebook-logo.png"
+          alt="fb"
         />
-        <h1 class="mx-10">TailWind CSS</h1>
+        <p class="-my-28 ml-5">
+          Facebook lets you connect to the world. Get
+          connected now!
+        </p>
+      </div>
+      <div
+        class="flex flex-col right bg-white w-[14rem] p-6 border border-5 border-gray-200 rounded-lg shadow-md relative"
+      >
+        <label
+          >Username
+          <input
+            type="text"
+            class="border-2 rounded-lg px-1 outline-blue-600"
+            placeholder=" Enter Phone or Email"
+        /></label>
+        <label
+          >Password
+          <input
+            class="border-2 rounded-lg px-1 outline-blue-600"
+            type="password"
+            placeholder=" Your password"
+          />
+        </label>
+        <span class="text-xs underline text-blue-600 mt-1"
+          >Forgotton Password?</span
+        >
+        <br />
+        <button
+          class="btn bg-blue-600 rounded-md text-white font-bold p-1 hover:bg-blue-500"
+        >
+          Log In
+        </button>
+
+        <hr class="my-2" />
+        <button
+          class="btn bg-green-600 p-1 rounded-md mx-auto px-2 text-white"
+        >
+          Create Account
+        </button>
+        <span class="absolute -bottom-10"
+          >Create a page for your fans.</span
+        >
       </div>
     </div>
   </body>
